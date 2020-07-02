@@ -5,12 +5,27 @@
         <title>Select language | 选择语言</title>
         <link rel="stylesheet" href="./base.css" />
         <link rel="stylesheet" href="./root.css" />
+
+        <!-- Load some scripts for data storage -->
+        <script type="text/javascript" src="/kexts/storage/cookies.js"></script>
+        <script type="text/javascript" src="/kexts/storage/storage.js"></script>
+
+        <!-- And the script for document postprocessing -->
+        <script type="text/javascript" src="/kexts/document/selectors.js"></script>
+
     </head>
     <body>
         <h1 id="english">Select language</h1>
         <h1 id="chinese">选择语言</h1>
 
-        <p id="english" class="buttons">English</p>
-        <p id="chinese" class="buttons">简体中文</p>
+        <div class="buttons">
+            <p id="english" >English</p>
+        </div>
+
+        <div class="buttons">
+            <p id="chinese">简体中文</p>
+        </div>
+
+        <script type="text/javascript" src="./root.js"></script>
     </body>
 </html>
