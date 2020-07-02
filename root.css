@@ -1,0 +1,23 @@
+#english
+{
+    font-family: "mainCourier", 'Courier New', Courier, monospace;
+}
+
+#chinese
+{
+    font-family: "mainKaiTi";
+}
+
+h1
+{
+    color: aqua;
+    font-size: 5em;
+    text-align: center;
+}
+
+p
+{
+    font-size: 3em;
+    text-align: center;
+    border: grey solid 5px;
+}

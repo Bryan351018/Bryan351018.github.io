@@ -7,3 +7,20 @@ p
 {
     color: white;
 }
+
+@font-face
+{
+    font-family: "mainKaiTi";
+    src: url("./fontfaces/kaiti/Kaiti.woff") format("woff"),
+         url("./fontfaces/kaiti/Kaiti.woff2") format("woff2"),
+         url("./fontfaces/kaiti/Kaiti.ttf") format("truetype");
+}
+
+@font-face
+{
+    font-family: "mainCourier";
+    src: url("./fontfaces/courier/Courier-12.woff") format("woff"),
+         url("./fontfaces/courier/Courier-12.woff2") format("woff2"),
+         url("./fontfaces/courier/Courier-12.ttf") format("truetype");
+}
+
