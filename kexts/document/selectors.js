@@ -1,6 +1,6 @@
 function select(selector)
 {
-    // Currently supports element, id, class
+    // Currently supports element, id, class, attribute
     const method = selector.charAt(0);
     var body = selector;
 
@@ -16,6 +16,10 @@ function select(selector)
         case '.': // class
             body = body.slice(1);
             result = document.getElementsByClassName(body);
+            break;
+
+        case '[':
+            result = document.querySelectorAll(body);
             break;
 
         default:  // element
