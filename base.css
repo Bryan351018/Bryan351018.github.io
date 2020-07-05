@@ -24,3 +24,13 @@ p
          url("./fontfaces/courier/Courier-12.ttf") format("truetype");
 }
 
+a
+{
+    text-decoration: none;
+    color: unset;
+}
+
+span p
+{
+    display: inline;
+}

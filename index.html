@@ -2,7 +2,11 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Select language | 选择语言</title>
+        <title>🌍</title>
+
+        <!-- Globe icon -->
+        <link rel="icon" href="/globe.ico" />
+
         <link rel="stylesheet" href="./base.css" />
         <link rel="stylesheet" href="./root.css" />
 
@@ -15,16 +19,20 @@
 
     </head>
     <body>
-        <h1 id="english">Select language</h1>
-        <h1 id="chinese">选择语言</h1>
 
-        <div class="buttons" onclick="javascript:lang_init('english');">
-            <p id="english">English</p>
+        <!-- Changed to globe SVG -->
+        <div id="globe">
+            <embed src="/globe.svg" type="image/svg+xml"/>
         </div>
+        <br />
 
-        <div class="buttons" onclick="javascript:lang_init('chinese');">
-            <p id="chinese">简体中文</p>
-        </div>
+        <span class="buttons">
+            <p id="en"><a href="javascript:lang_init('en');">English</a></p>
+        </span>
+
+        <span class="buttons">
+            <p id="cn"><a href="javascript:lang_init('cn');">简体中文</a></p>
+        </span>
 
         <!-- Language init script -->
         <script type="text/javascript" src="/root.js"></script>

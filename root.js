@@ -4,11 +4,11 @@ function lang_init(lang)
 {
     switch (lang)
     {
-        case "english":
+        case "en":
             x_set("lang", "en_US");
             break;
 
-        case "chinese":
+        case "cn":
             x_set("lang", "zh_CN");
             break;
 
