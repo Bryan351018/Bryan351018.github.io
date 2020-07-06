@@ -17,5 +17,12 @@ function lang_init(lang)
             break;
     }
 
-    window.open("./main/test.html", "_self", "", true);
+    window.open("/main/test.html", "_self", "", true);
+}
+
+// If the user had set the language, go there
+
+if (x_get("lang") && x_get("lang") !== "")
+{
+    lang_init(x_get("lang"));
 }

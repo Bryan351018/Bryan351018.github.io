@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>🌍</title>
+
+        <!-- Globe icon -->
+        <link rel="icon" href="/icon.ico" />
+
+        <link rel="stylesheet" href="/base.css" />
+        <link rel="stylesheet" href="./root.css" />
+
+        <!-- Load some scripts for data storage -->
+        <script type="text/javascript" src="/kexts/storage/cookies.js"></script>
+        <script type="text/javascript" src="/kexts/storage/storage.js"></script>
+
+        <!-- And the script for document postprocessing -->
+        <script type="text/javascript" src="/kexts/document/selectors.js"></script>
+
+    </head>
+    <body>
+
+        <!-- Changed to globe SVG -->
+        <div id="globe">
+            <embed src="./../globe.svg" type="image/svg+xml"/>
+        </div>
+        <br />
+
+        <span class="buttons">
+            <p id="en"><a href="javascript:lang_init('en');">English</a></p>
+        </span>
+
+        <span class="buttons">
+            <p id="cn"><a href="javascript:lang_init('cn');">简体中文</a></p>
+        </span>
+
+        <!-- Language init script -->
+        <script type="text/javascript" src="./root.js"></script>
+
+    </body>
+</html>
