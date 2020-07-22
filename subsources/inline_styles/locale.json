@@ -1,0 +1,11 @@
+{
+    "en_US":
+    {
+        "font-family": "'mainCourier', 'Courier New', Courier, monospace;"
+    },
+
+    "zh_CN":
+    {
+        "font-family": "mainKaiTi"
+    }
+}
