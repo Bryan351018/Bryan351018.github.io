@@ -17,7 +17,7 @@ function lang_init(lang)
             break;
     }
 
-    window.open("/main/test.html", "_self", "", true);
+    window.open("./../general/settings.html", "_self", "", true);
 }
 
 // If the user had set the language, go there
