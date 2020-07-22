@@ -2,6 +2,8 @@
 
 function lang_init(lang)
 {
+    x_set("conf_progress", "lang");
+
     switch (lang)
     {
         case "en":
@@ -18,11 +20,4 @@ function lang_init(lang)
     }
 
     window.open("./../general/settings.html", "_self", "", true);
-}
-
-// If the user had set the language, go there
-
-if (x_get("lang") && x_get("lang") !== "")
-{
-    lang_init(x_get("lang"));
 }

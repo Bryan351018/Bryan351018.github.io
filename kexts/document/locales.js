@@ -4,16 +4,36 @@
 
 const lang = x_get("lang");
 
-// const xhr = new XMLHttpRequest();
-
-function show_progress(readyState, status)
+function apply_l_styles()
 {
-    console.log("XHR: readyState = " + readyState + ", status = " + status);
+    var dict = xhr.responseText;
+    dict = JSON.parse(dict);
+
+    const language = x_get("lang");
+    dict = dict[language];
+
+    
+    const collection = select("[l_key]");
+    
+    for (var i = 0; i < collection.length; i++)
+    {
+        applyStyle(collection[i], dict);
+    }
+
 }
 
-async function load_locales(path)
+
+function show_progress_2(readyState, status)
 {
-    request("GET", path, show_progress);
+    console.log("XHR: readyState = " + readyState + ", status = " + status);
+
+    if (xhr.readyState == 4 && xhr.status == 200)
+        apply_l_styles();
+    
+}
+
+function apply_locales()
+{
     var dict = xhr.responseText;
     dict = JSON.parse(dict);
 
@@ -29,4 +49,19 @@ async function load_locales(path)
         cur_element.innerText = dict[collection[i]];
     }
 
+    request("GET", "/subsources/inline_styles/locale.json", show_progress_2);
+}
+
+function show_progress_1(readyState, status)
+{
+    console.log("XHR: readyState = " + readyState + ", status = " + status);
+
+    if (xhr.readyState == 4 && xhr.status == 200)
+        apply_locales();
+    
+}
+
+function load_locales(path)
+{
+    request("GET", path, show_progress_1);
 }

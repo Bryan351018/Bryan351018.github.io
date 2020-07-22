@@ -1,3 +1,5 @@
+'use strict';
+
 const xhr = new XMLHttpRequest();
 
 function request(method, path, basefunc)

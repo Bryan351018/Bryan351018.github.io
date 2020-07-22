@@ -26,7 +26,6 @@ else
     console.error("No methods exist to data storage.")
 }
 
-
 function x_set(key, value)
 {
     switch (x_storage)
