@@ -1,0 +1,13 @@
+{
+    "en_US":
+    {
+        "title": "Settings",
+        "greetings": "Welcome to the settings page of my blog!"
+    },
+
+    "zh_CN":
+    {
+        "title": "设置",
+        "greetings": "欢迎来到我的博客中的设置页面！"
+    }
+}

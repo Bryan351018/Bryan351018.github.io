@@ -2,9 +2,26 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title></title>
+        <title l_key="title"></title>
+        <link rel="icon" href="/icon.ico" />
+        <link rel="stylesheet" href="/base.css" />
+
+        <!-- Load some scripts for data storage -->
+        <script type="text/javascript" src="/kexts/storage/cookies.js"></script>
+        <script type="text/javascript" src="/kexts/storage/storage.js"></script>
+
+        <!-- And the script for document postprocessing -->
+        <script type="text/javascript" src="/kexts/document/selectors.js"></script>
+        <!-- Also XHR -->
+        <script type="text/javascript" src="/kexts/fs_access/xhr.js"></script>
     </head>
     <body>
-        
+
+        <h1 l_key="greetings"></h1>
+
+        <script type="text/javascript" src="/kexts/document/locales.js"></script>
+        <script type="text/javascript">
+            load_locales("/subsources/locales/settings.json");
+        </script>
     </body>
 </html>
