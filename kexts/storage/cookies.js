@@ -1,6 +1,6 @@
 'use strict';
 
-function setCookie(key, value, exp_sec, path=location.pathname)
+function setCookie(key, value, exp_sec, path="/")
 {
     /**
      * @description Sets the value and expire time of a cookie.
